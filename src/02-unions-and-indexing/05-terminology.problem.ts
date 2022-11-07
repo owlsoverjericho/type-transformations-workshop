@@ -8,7 +8,7 @@
  * Which is which?
  */
 
-type A =
+type A = //And this should be a discriminated union
   | {
       type: "a";
       a: string;
@@ -22,9 +22,9 @@ type A =
       c: string;
     };
 
-type B = "a" | "b" | "c";
+type B = "a" | "b" | "c"; //Just a Union
 
-enum C {
+enum C {  //An Enum Union
   A = "a",
   B = "b",
   C = "c",
